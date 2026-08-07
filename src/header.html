@@ -1,48 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Header page</title>
     <!-- <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style type="text/css">
-        header {
-            display: flex;
-            flex-direction: row;
-            border: 1px solid black;
-        }
+      header{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         margin-top: 10px;
+         font-family: arial;
+
+      }
+      .menu{
+         padding-left: 10px;
+      }
+      .title{
+         font-size: 25px;
+         font-weight: bold;
+
+      }
+      .sub-title,.icons {
+         margin-top: 10px;
+
+      }
+      .items{
+         background-color: red;
+         height: 20px;
+         width: 20px;
+         display: inline-block;
+         text-align: center;
+         border-radius: 20px;
+      }
+      section{
+         border: 1px solid black;
+         margin-top: 25px;
+         text-align: center;
+         
+         background-color: black;
+         color: white;
+      }
+      .bi-lightning-charge-fill{
+         color: goldenrod;
+      }
+
     </style>
 </head>
-
 <body>
     <header>
-        <div>
-            <span>shopper</span>
-        </div>
-        <div>
-            <span>home</span>
-            <span>catalog</span>
-            <span>shop</span>
-            <span>pages</span>
-            <span>Blog</span>
-            <span>Docs</span>
-        </div>
-        <div>
-            <span class="bi bi-search"></span>
-            <span class="bi bi-person"></span>
-            <span class="bi bi-heart"></span>
-            <span class="bi bi-cart3"> 2</span>
-            <span class="bi bi-search"></span>
-            <span class="bi bi-person"></span>
-            <span class="bi bi-heart"></span>
-            <span class="bi bi-cart3"></span>
+     <div>
+    <span class="title">Shopper.</span>
+     </div> 
+     <div class="sub-title">
+        <span  class="menu">Home</span>
+        <span  class="menu">Catalog</span>
+        <span  class="menu">Shop</span>
+        <span  class="menu">Pages</span>
+        <span  class="menu">Blog</span>
+        <span class="menu">Docs</span>
 
-        </div>
+     </div> 
+     <div class="icons">
+        <span class="bi bi-search"></span>
+        <span class="bi bi-person"></span>
+        <span class="bi bi-heart"></span>
+        <span class="bi bi-cart3">
+         <span class="items"> 2</span>
+        </span>
+     </div> 
     </header>
-
+    <section>
+      <marquee>
+      <div>
+     <span class="bi bi-lightning-charge-fill"></span>
+     <span>Happy holiday deals on everything</span>
+     <span class="bi bi-lightning-charge-fill"></span>    
+      </div>
+    </section>
+   </marquee>
 </body>
+        
 
-</html>
+    
