@@ -6,29 +6,43 @@
     <title>Document</title>
     <style class="text/css">
         dt{
-            background-color: grey;
-            color: black;
+            background-color: black;
+            color: white;
             font-size: 25px;
-            margin-left: 5px;
             padding: 10px;
+            width: 200px;
+            margin-bottom: 20px;
         }
         dd{
-            font-size: 20px;
+            background-color: lightgray;
+            font-size: 25px;
+            padding: 10px;
+            color: black;
+            width: 400px;
+            margin-bottom: 20px;
         }
-
+        dl{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
     </style>
 </head>
 <body>
     <dl>
-        <dt>HTML</dt>
-        <dd>It is a markup langugae</dd>
-          <dd>It is used for presentation</dd>
-            <dd>Designed by Tim berner lee</dd>
-        <dt>CSS</dt>
-        <dd>It defines style</dd>
-        <dt>Javascript</dt>
-        <dd>It manipulates DOM</dd>
+        <dt>First Name</dt>
+        <dd>Some name</dd>
+
+        <dt>Last Name</dt>
+        <dd>Some name</dd>
+
+        <dt>Father Name</dt>
+        <dd>Some name</dd>
+
+        <dt>Age</dt>
+        <dd>Some number</dd>
+
+        <dt>Date of Birth</dt>
+        <dd>Some date</dd>
     </dl>
-    
 </body>
 </html>
