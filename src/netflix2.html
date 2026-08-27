@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>NETFLIX</title>
+    <link rel="shortcurt icon" href="/public/images/netflixlogo.jpg">
+    <style class="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+
+
+
+
+
+        }
+
+
+        .title {
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            margin-right: 100;
+            margin-left: 85px;
+        }
+
+        .sub-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+
+        }
+
+        .icons {
+            font-size: 15px;
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        main {
+
+            width: 100vw;
+            height: 80vh;
+            margin: -8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .email-text input {
+            background-color: rgba(0, 0, 0, 0.6);
+
+            border: 1px solid white;
+
+
+            width: 300px;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+
+
+
+        }
+
+        .button button {
+            background-color: red;
+            border: 1px solid red;
+            color: white;
+            width: 300px;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 15px;
+            margin-left: 5px;
+            cursor: pointer;
+
+
+
+        }
+
+        .header {
+             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 100px;
+
+
+        }
+
+        .logo img {
+                        width: 180px;
+        }
+
+        /* .button-1 button {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-color: 1px solid lightgray;
+
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px;
+            margin: 5px;
+            width: 150px;
+            border-radius: 5px;
+
+
+        } */
+        .button-1 button {
+             background-color: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button-2 input {
+
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+
+
+        }
+
+        section {
+              min-height: 100vh;
+
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url("/public/images/netflix-background-image.jpg");
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            
+        }
+
+       details summary{
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        details{
+            margin-bottom: 20px;
+        }
+         summary~div{
+            background-color: black;
+            color: white;
+            margin-left: 10px;
+            padding: 10px;
+        } 
+        footer{
+            height: 100vh;
+        }
+    </style>
+</head>
+<!--this is body section-->
+
+<body>
+    <section>
+
+
+        <header>
+            <div class="header">
+                <div class="logo">
+
+                    <img src="/public/images/netflix-2-logo-svgrepo-com.svg">
+                </div>
+                <div>
+                    <span class="button-1">
+                        <button><i class="bi bi-translate"></i>English <i class="bi bi-caret-down-fill"></i></button>
+                    </span>
+                    <span class="button-2">
+                        <input type="button" value="sign in">
+                    </span>
+
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+
+            <div class="shade">
+                <div class="title">
+                    Unlimited movies,
+                </div>
+                <div class="title">
+                    Shows,and More
+                </div>
+                <div class="sub-title">
+                    Starts at ₹149. Cancel at any time.
+                </div>
+                <div class="sub-title">
+                    Ready to watch? Enter your email to create or restart your membership.
+                </div>
+                <div class="icons">
+                    <span class="email-text">
+                        <input type="email" name="email" placeholder="Email address" id="email">
+                    </span>
+                    <span class="button">
+
+                        <button>Get started <i class="bi bi-chevron-compact-right"></i></button>
+
+
+
+                    </span>
+
+
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+    <details>
+        <summary>what is netflix?</summary>
+        <div>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+            documentaries and more – on thousands of internet-connected devices.
+
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price.
+            There's always something new to discover, and new TV shows and movies are added every week!</div>
+    </details>
+    <details>
+        <summary>How much does netflix cost?</summary>
+        <div>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly
+            fee. Plans range from ₹149 to ₹649/month.</div>
+    </details>
+    <details>
+        <summary>Where can I watch?</summary>
+        <div>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com
+            from your personal computer or on any internet-connected device that offers the Netflix app, including smart
+            TVs, smartphones, tablets, streaming media players and game consoles.
+
+            You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're
+            on the go and without an internet connection. Take Netflix with you anywhere.</div>
+    </details>
+    <details>
+        <summary>
+            How do I cancel?
+        </summary>
+        <div>Netflix is flexible. You can easily cancel your account online in two clicks. There are no cancellation
+            fees – start or stop your account anytime.</div>
+    </details>
+    <details>
+        <summary>What can I watch on Netflix?
+        </summary>
+        <div>Netflix has an extensive library of feature films, documentaries, shows, anime, award-winning Netflix
+            originals, and more. Watch as much as you want, anytime you want.</div>
+    </details>
+    <details>
+        <summary>Is netflix good for kids?</summary>
+        <div>The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+            family-friendly TV shows and films in their own space.
+
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content
+            kids can watch and block specific titles you don’t want kids to see.</div>
+    </details>
+
+
+
+</body>
