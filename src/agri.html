@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CropCare AI</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4fdf4;
+}
+
+/* Navbar */
+
+nav{
+    background:#0b6623;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:55px;
+}
+
+.hero-content p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#28a745;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Sections */
+
+section{
+    padding:70px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0b6623;
+}
+
+/* About */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Features */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card i{
+    font-size:40px;
+    color:green;
+    margin-bottom:15px;
+}
+
+/* Steps */
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.step{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* Benefits */
+
+.benefits{
+    background:#0b6623;
+    color:white;
+}
+
+.benefits ul{
+    max-width:800px;
+    margin:auto;
+    line-height:2;
+    font-size:18px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    max-width:600px;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid gray;
+}
+
+.contact button{
+    padding:12px 30px;
+    background:green;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero-content h1{
+font-size:35px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>🌱 CropCare AI</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+
+<div class="hero-content">
+<h1>AI Crop Disease Detection</h1>
+
+<p>
+Identify crop diseases instantly using Artificial Intelligence
+and help farmers improve productivity.
+</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</div>
+
+</div>
+
+<section>
+
+<h1 class="title">About Project</h1>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800">
+
+<div>
+
+<h2>AI-Based Crop Disease Identification</h2>
+
+<p>
+This platform helps farmers identify crop diseases
+by uploading leaf images. AI analyzes the image,
+detects disease, and provides treatment suggestions.
+</p>
+
+<br>
+
+<p>
+The solution supports sustainable agriculture,
+reduces crop loss, and increases yield through
+early disease detection.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Key Features</h1>
+
+<div class="features">
+
+<div class="card">
+<i class="fa-solid fa-camera"></i>
+<h3>Leaf Scan</h3>
+<p>Upload crop images for analysis.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-robot"></i>
+<h3>AI Detection</h3>
+<p>Identify diseases automatically.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-notes-medical"></i>
+<h3>Treatment Advice</h3>
+<p>Get medicine recommendations.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-cloud-sun"></i>
+<h3>Weather Alerts</h3>
+<p>Receive weather updates.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">How It Works</h1>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Upload Image</h3>
+<p>Take a picture of crop leaf.</p>
+</div>
+
+<div class="step">
+<h3>2. AI Analysis</h3>
+<p>Model detects disease.</p>
+</div>
+
+<div class="step">
+<h3>3. View Result</h3>
+<p>Disease information displayed.</p>
+</div>
+
+<div class="step">
+<h3>4. Get Advice</h3>
+<p>Treatment suggestions shown.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="benefits">
+
+<h1 class="title" style="color:white">
+Benefits For Farmers
+</h1>
+
+<ul>
+<li>✔ Early Disease Detection</li>
+<li>✔ Increased Crop Yield</li>
+<li>✔ Reduced Farming Cost</li>
+<li>✔ Smart Farming Support</li>
+<li>✔ Sustainable Agriculture</li>
+<li>✔ Mobile-Friendly Platform</li>
+</ul>
+
+</section>
+
+<section class="contact">
+
+<h1 class="title">Contact Us</h1>
+
+<input type="text" placeholder="Your Name">
+
+<br>
+
+<input type="email" placeholder="Email">
+
+<br>
+
+<textarea rows="5"
+placeholder="Your Message"></textarea>
+
+<br>
+
+<button>Send Message</button>
+
+</section>
+
+<footer>
+© 2026 CropCare AI | Hackverse 2K26 Project
+</footer>
+
+</body>
+</html>
